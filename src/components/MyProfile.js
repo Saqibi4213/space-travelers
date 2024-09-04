@@ -5,4 +5,3 @@ export default function MyProfile() {
     <div>MyProfile</div>
   );
 }
-
