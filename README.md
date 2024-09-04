@@ -54,9 +54,9 @@ Clone this repository to your desired folder:
 <a name="authors"></a>
 
 👤 **Mehria**  
-- GitHub: [Mehria](https://github.com/Mehria)  
-- Email: mehria@example.com  
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mehria)  
+- GitHub: [Mehria](https://github.com/Saqibi4213)  
+- Email: [email.com] (mosawermh@gmail.com)  
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/mehria-saqibi-a386a41a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
 
 👤 **Farhat**  
 - GitHub: [Farhat](https://github.com/Farhat)  
