@@ -4,4 +4,4 @@ export default function Dragons() {
   return (
     <div>Dragons</div>
   );
-};
+}

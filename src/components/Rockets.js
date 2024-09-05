@@ -1,10 +1,12 @@
+import React from 'react';
 import { useSelector } from 'react-redux';
 import '../modules/Rocket.css';
 import RocketsItem from './RocketsItem';
 
-const Rockets = () => {
+function Rockets() {
   const selectedData = useSelector((state) => state.rockets);
   const { loading, error, rocketData } = selectedData;
+
   return (
     <ul className="rocket-container">
       {loading && <p>Loading</p>}
@@ -22,6 +24,6 @@ const Rockets = () => {
         ))}
     </ul>
   );
-};
+}
 
 export default Rockets;
