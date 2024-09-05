@@ -3,7 +3,6 @@ import { render } from '@testing-library/react';
 import { useSelector } from 'react-redux';
 import Rockets from '../components/Rockets';
 
-// Mock the useSelector function from react-redux
 jest.mock('react-redux', () => ({
   useSelector: jest.fn(),
 }));
@@ -18,7 +17,6 @@ describe('Rockets Component', () => {
 
     const { getByText } = render(<Rockets />);
 
-    // Check if the loading text is present
     expect(getByText('Loading')).toBeDefined();
   });
 
@@ -30,8 +28,6 @@ describe('Rockets Component', () => {
     });
 
     const { getByText } = render(<Rockets />);
-
-    // Check if the error text is present
     expect(getByText('Error...')).toBeDefined();
   });
 });
