@@ -1,0 +1,46 @@
+.rocket-card {
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.rocket-img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.rocket-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.rocket-id {
+  font-size: 1rem;
+  color: #555;
+}
+
+.rocket-desc {
+  font-size: 1rem;
+}
+
+.reserve-btn {
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .custom-width {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .custom-width {
+    width: 50%;
+  }
+}
+
+@media (max-width: 767px) {
+  .custom-width {
+    width: 50%;
+  }
+}
