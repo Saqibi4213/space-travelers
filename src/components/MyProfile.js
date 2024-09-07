@@ -5,9 +5,8 @@ import '../modules/Profile.css';
 function MyProfile() {
   const rocketData = useSelector((state) => state.rockets.rocketData);
   const missionData = useSelector((state) => state.missions.missions);
-  const dragonData = useSelector((state) => state.dragons.dragonData); // Update to match state
+  const dragonData = useSelector((state) => state.dragons.dragonData);
 
-  // Log data to verify it's being retrieved correctly
   /* eslint-disable no-console */
   console.log('Rocket Data:', rocketData);
   console.log('Mission Data:', missionData);

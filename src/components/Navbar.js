@@ -1,29 +1,30 @@
 import { NavLink } from 'react-router-dom';
 import logo from '../assets/planet.png';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import '../App.css';
 
 function Navbar() {
   return (
-    <header>
-      <div className="header-container">
-        <div className="header-left">
-          <div className="logo-container">
-            <img src={logo} className="logo" alt="header logo" />
-            <h1 className="header-title">Space Travelers Hub</h1>
+    <header className="bg-light py-2">
+      <div className="container">
+        <div className="d-flex justify-content-between align-items-center flex-wrap">
+          <div className="d-flex align-items-center flex-shrink-0">
+            <img src={logo} className="logo me-2" alt="header logo" />
+            <h1 className="header-title mb-0">Space Travelers Hub</h1>
           </div>
-          <nav>
-            <ul className="links">
-              <li>
-                <NavLink to="/" className={({ isActive }) => (isActive ? 'active-link' : '')}>Rockets</NavLink>
+          <nav className="flex-grow-1">
+            <ul className="nav justify-content-end">
+              <li className="nav-item">
+                <NavLink to="/" className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}>Rockets</NavLink>
               </li>
-              <li>
-                <NavLink to="missions" className={({ isActive }) => (isActive ? 'active-link' : '')}>Missions</NavLink>
+              <li className="nav-item">
+                <NavLink to="missions" className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}>Missions</NavLink>
               </li>
-              <li>
-                <NavLink to="dragons" className={({ isActive }) => (isActive ? 'active-link' : '')}>Dragons</NavLink>
+              <li className="nav-item">
+                <NavLink to="dragons" className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}>Dragons</NavLink>
               </li>
-              <li>
-                <NavLink to="myprofile" className={({ isActive }) => (isActive ? 'active-link' : '')}>My Profile</NavLink>
+              <li className="nav-item">
+                <NavLink to="myprofile" className={({ isActive }) => (isActive ? 'nav-link active' : 'nav-link')}>My Profile</NavLink>
               </li>
             </ul>
           </nav>
