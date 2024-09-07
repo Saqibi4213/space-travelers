@@ -1,6 +1,28 @@
-.rocket-container {
-  margin: 20px 70px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+.rocket-card {
+  border: 1px solid #ddd;
+  border-radius: 0.5rem;
+  overflow: hidden;
+}
+
+.rocket-img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.rocket-name {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.rocket-id {
+  font-size: 1rem;
+  color: #555;
+}
+
+.rocket-desc {
+  font-size: 1rem;
+}
+
+.reserve-btn {
+  width: 100%;
 }
