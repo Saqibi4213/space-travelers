@@ -20,7 +20,7 @@ function RocketsItem({
   return (
     <Card className="mb-4 rocket-card">
       <Row className="g-0">
-        <Col xs={12} md={4}>
+        <Col xs={12} md={4} className="text-center">
           <Card.Img
             variant="top"
             src={image}
@@ -38,16 +38,18 @@ function RocketsItem({
               </Card.Text>
             </div>
             <Card.Text className="rocket-desc mt-3">
-              {reserved && <span className="badge bg-danger me-2">Reserved</span>}
+              {reserved && <span className="badge bg-danger me-3">Reserved</span>}
               {description}
             </Card.Text>
-            <Button
-              variant={reserved ? 'danger' : 'primary'}
-              onClick={() => handleReserve(id)}
-              className="reserve-btn mt-3"
-            >
-              {reserved ? 'Cancel Reservation' : 'Reserve Rocket'}
-            </Button>
+            <div className="mt-3 mt-md-auto w-200 d-flex justify-content-md-end">
+              <Button
+                variant={reserved ? 'danger' : 'primary'}
+                onClick={() => handleReserve(id)}
+                className="reserve-btn w-400 w-md-auto custom-width"
+              >
+                {reserved ? 'Cancel Reservation' : 'Reserve Rocket'}
+              </Button>
+            </div>
           </Card.Body>
         </Col>
       </Row>
