@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import Rockets from './components/Rockets';
+import Missions from './components/Missions';
 import MyProfile from './components/MyProfile';
 import { getDataFromServer } from './redux/Rockets/RocketsSlice';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -20,7 +21,9 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/" element={<Rockets />} />
+          <Route path="missions" element={<Missions />} />
           <Route path="myprofile" element={<MyProfile />} />
+          <Route path="dragons" element={<Dragons />} />
         </Routes>
       </Router>
     </div>
