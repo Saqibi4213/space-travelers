@@ -57,4 +57,4 @@ DragonsItem.propTypes = {
   onReserve: PropTypes.func.isRequired,
 };
 
-export default DragonsItem;
+export default DragonsItem;
