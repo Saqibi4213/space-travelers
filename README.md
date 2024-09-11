@@ -30,7 +30,7 @@
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
+## 🚀 Live Demo <a name="live-demo">https://dev--earnest-wisp-77ac4d.netlify.app/</a>
 
 - <a href="" target="_blank">Live Demo</a>
 
