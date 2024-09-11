@@ -1,5 +1,7 @@
 import React from 'react';
-import { Button, Card, Container, Row, Col } from 'react-bootstrap';
+import {
+ Button, Card, Container, Row, Col,
+} from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { join } from '../redux/missions/missionSlice';
 
