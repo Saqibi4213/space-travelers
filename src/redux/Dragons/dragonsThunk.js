@@ -7,5 +7,5 @@ export const fetchDragons = createAsyncThunk(
   async () => {
     const response = await axios.get('https://api.example.com/dragons');
     return response.data;
-  }
+  },
 );
