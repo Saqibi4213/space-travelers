@@ -45,7 +45,7 @@ To get a local copy up and running, follow these steps.
 Clone this repository to your desired folder:
 
 ```sh
-  git 
+  git https://github.com/Saqibi4213/space-travelers.git
 ```
 
 <!-- AUTHORS -->
@@ -55,7 +55,7 @@ Clone this repository to your desired folder:
 
 👤 **Mehria**  
 - GitHub: [Mehria](https://github.com/Saqibi4213)  
-- Email: [email.com] (mosawermh@gmail.com)  
+- Email: [email.com](mosawermh@gmail.com)  
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/mehria-saqibi-a386a41a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
 
 👤 **Farhat**  
