@@ -4,7 +4,6 @@ import {
   Card, Button, Row, Col,
 } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import '../modules/Dragon.css';
 
 function DragonsItem({
   id, name, image, description, reserved, onReserve,

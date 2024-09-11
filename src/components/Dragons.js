@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import '../modules/Dragon.css';
 import DragonsItem from './DragonsItem';
 import { fetchDragons, reserveDragon } from '../redux/Dragons/DragonsSlice';
 
@@ -12,6 +11,7 @@ function Dragons() {
     dispatch(fetchDragons());
   }, [dispatch]);
 
+  // eslint-disable-next-line no-console
   console.log('Dragon Data:', dragonData); // Add this line
 
   const handleReserve = (id) => {
