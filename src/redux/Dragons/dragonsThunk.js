@@ -1,7 +1,7 @@
 import { createAsyncThunk } from '@reduxjs/toolkit';
 import axios from 'axios';
 
-// Define fetchDragons using createAsyncThunk
+// eslint-disable-next-line import/prefer-default-export
 export const fetchDragons = createAsyncThunk(
   'dragons/fetchDragons',
   async () => {
