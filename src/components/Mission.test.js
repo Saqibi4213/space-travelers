@@ -3,6 +3,7 @@ import { Button, Card, Container, Row, Col } from 'react-bootstrap';
 import { useDispatch, useSelector } from 'react-redux';
 import { join } from '../redux/missions/missionSlice';
 
+// eslint-disable-next-line object-curly-newline
 function Missions() {
   const dispatch = useDispatch();
   const missions = useSelector((state) => state.missions.missions);
@@ -35,4 +36,5 @@ function Missions() {
   );
 }
 
+// eslint-disable-next-line import/prefer-default-export
 export default Missions;

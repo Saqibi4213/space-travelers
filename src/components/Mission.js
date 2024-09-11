@@ -51,7 +51,6 @@ function Mission({
               borderRadius: '4px',
             }}
           >
-          
             Leave Mission
           </button>
         ) : (
