@@ -59,14 +59,14 @@ Clone this repository to your desired folder:
 - LinkedIn: [LinkedIn](https://www.linkedin.com/in/mehria-saqibi-a386a41a1?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)
 
 👤 **Farhat**  
-- GitHub: [Farhat](https://github.com/Farhat)  
-- Email: farhat@example.com  
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/farhat)  
+- GitHub: [Farhat](https://github.com/iamfarhatsharefi)  
+- [Email](sharefifarhat@gmail.com)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/farhat-sharefi-13a101309?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app)  
 
 👤 **Nooria**  
-- GitHub: [Nooria](https://github.com/Nooria)  
-- Email: nooria@example.com  
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/nooria)  
+- GitHub: [Nooria](https://github.com/Nooria150)  
+- [Email](nooriamangal55@gmail.com)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/nooria-mangal-428a35309?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app)  
 
 <!-- CONTRIBUTING -->
 
