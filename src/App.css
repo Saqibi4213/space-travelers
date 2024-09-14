@@ -1,0 +1,97 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header-title {
+  font-size: 1.5rem;
+  color: #000;
+}
+
+@keyframes bounce {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-5px);
+  }
+
+  60% {
+    transform: translateY(-3px);
+  }
+}
+
+.logo {
+  width: 40px;
+  height: auto;
+  animation: bounce 1.5s infinite;
+}
+
+.nav-link.active {
+  font-weight: bold;
+  color: #007bff;
+}
+
+.nav-link {
+  margin-left: 10px;
+}
+
+@media (max-width: 576px) {
+  .nav-link {
+    padding: 0.5rem 0.75rem;
+  }
+
+  .nav {
+    flex-wrap: wrap;
+  }
+}
+
+table {
+  border-collapse: collapse;
+  width: 90%;
+  margin: 20px auto;
+}
+
+th,
+td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+tr:hover {
+  background-color: #ddd;
+}
+
+.wide-td {
+  white-space: nowrap;
+}
+
+.status {
+  padding: 3px;
+  border-radius: 7px;
+  color: #fff;
+}
+
+tr:nth-child(even) p {
+  background-color: rgb(80, 98, 158);
+}
+
+.active-btn {
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid red;
+  border-radius: 4px;
+}

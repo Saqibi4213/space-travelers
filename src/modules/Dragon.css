@@ -1,0 +1,41 @@
+.dragon-card {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.dragon-img {
+  max-width: 100%;
+  height: auto;
+}
+
+.dragon-name {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.dragon-desc {
+  font-size: 1rem;
+}
+
+.reserve-btn {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .dragon-card {
+    flex-direction: row;
+  }
+
+  .dragon-img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
