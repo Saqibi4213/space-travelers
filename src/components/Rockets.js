@@ -6,12 +6,13 @@ import RocketsItem from './RocketsItem';
 
 function Rockets() {
   const dispatch = useDispatch();
-  const selectedData = useSelector((state) => state.rockets);
-  const { loading, error, rocketData } = selectedData;
+  const { loading, error, rocketData } = useSelector((state) => state.rockets);
 
   useEffect(() => {
-    dispatch(getDataFromServer());
-  }, [dispatch]);
+    if (rocketData.length === 0) {
+      dispatch(getDataFromServer());
+    }
+  }, [dispatch, rocketData.length]);
 
   return (
     <ul className="rocket-container">
@@ -25,11 +26,7 @@ function Rockets() {
       {!loading && !error && rocketData.map((rocket) => (
         <RocketsItem
           key={rocket.id}
-          id={rocket.id}
-          name={rocket.name}
-          image={rocket.image}
-          description={rocket.description}
-          reserved={rocket.reserved}
+          rocket={rocket}
         />
       ))}
     </ul>

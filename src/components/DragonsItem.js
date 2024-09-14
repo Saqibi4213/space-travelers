@@ -7,7 +7,8 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 
 function DragonsItem({
   id, name, image, description, reserved, onReserve,
-}) {
+})
+  {
   return (
     <Card className="mb-4 dragon-card">
       <Row className="g-0">
