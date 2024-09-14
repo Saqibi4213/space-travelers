@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import { Card, ListGroup } from 'react-bootstrap';
 import '../modules/Profile.css';
 
 function MyProfile() {
@@ -7,51 +8,52 @@ function MyProfile() {
   const missionData = useSelector((state) => state.missions.missions);
   const dragonData = useSelector((state) => state.dragons.dragonData);
 
-  /* eslint-disable no-console */
-  console.log('Rocket Data:', rocketData);
-  console.log('Mission Data:', missionData);
-  console.log('Dragon Data:', dragonData);
-
   const filterRockets = rocketData ? rocketData.filter((rocket) => rocket.reserved) : [];
   const filterMissions = missionData ? missionData.filter((mission) => mission.reserved) : [];
   const filterDragons = dragonData ? dragonData.filter((dragon) => dragon.reserved) : [];
 
   return (
-    <div className="profile">
-      <div className="mission-card">
-        <h2 className="title-p">My Missions</h2>
-        <ul className="profile-card">
+    <div className="profile container mt-5">
+      <h1 className="text-center mb-4">My Profile</h1>
+
+      <Card className="mb-4">
+        <Card.Header as="h5">My Missions</Card.Header>
+        <ListGroup variant="flush">
           {filterMissions.length > 0 ? (
             filterMissions.map((mission) => (
-              <li key={mission.mission_id} className="ul-list-item">{mission.mission_name}</li>
+              <ListGroup.Item key={mission.mission_id}>{mission.mission_name}</ListGroup.Item>
             ))
           ) : (
-            <p>No missions reserved.</p>
+            <ListGroup.Item>No missions reserved.</ListGroup.Item>
           )}
-        </ul>
-      </div>
-      <div className="rocket-card">
-        <h2 className="title-p">My Rockets</h2>
-        <ul className="profile-card">
+        </ListGroup>
+      </Card>
+
+      <Card className="mb-4">
+        <Card.Header as="h5">My Rockets</Card.Header>
+        <ListGroup variant="flush">
           {filterRockets.length > 0 ? (
             filterRockets.map((rocket) => (
-              <li key={rocket.id} className="ul-list-item">{rocket.name}</li>
+              <ListGroup.Item key={rocket.id}>{rocket.name}</ListGroup.Item>
             ))
           ) : (
-            <p>No rockets reserved.</p>
+            <ListGroup.Item>No rockets reserved.</ListGroup.Item>
           )}
-        </ul>
-        <h2 className="title-p">My Dragons</h2>
-        <ul className="profile-card">
+        </ListGroup>
+      </Card>
+
+      <Card className="mb-4">
+        <Card.Header as="h5">My Dragons</Card.Header>
+        <ListGroup variant="flush">
           {filterDragons.length > 0 ? (
             filterDragons.map((dragon) => (
-              <li key={dragon.id} className="ul-list-item">{dragon.name}</li>
+              <ListGroup.Item key={dragon.id}>{dragon.name}</ListGroup.Item>
             ))
           ) : (
-            <p>No dragons reserved.</p>
+            <ListGroup.Item>No dragons reserved.</ListGroup.Item>
           )}
-        </ul>
-      </div>
+        </ListGroup>
+      </Card>
     </div>
   );
 }

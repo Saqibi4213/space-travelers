@@ -16,14 +16,14 @@ function RocketsItem({ rocket }) {
   };
 
   return (
-    <Card className="mb-4 rocket-card">
+    <Card className="mb-4 rocket-card shadow">
       <Row className="g-0">
         <Col xs={12} md={4} className="text-center">
           <Card.Img
             variant="top"
             src={rocket.image}
             alt={rocket.name}
-            className="img-fluid rocket-img"
+            className="img-fluid rocket-img rounded-start"
           />
         </Col>
         <Col xs={12} md={8}>
@@ -39,13 +39,15 @@ function RocketsItem({ rocket }) {
               {rocket.reserved && <span className="badge bg-danger me-3">Reserved</span>}
               {rocket.description}
             </Card.Text>
-            <div className="mt-3 mt-md-auto w-200 d-flex justify-content-md-end">
+            <div className="mt-auto d-flex justify-content-md-end">
               <Button
-                variant={rocket.reserved ? 'danger' : 'primary'}
+                variant={rocket.reserved ? 'outline-danger' : 'outline-primary'}
                 onClick={handleReserve}
-                className="reserve-btn w-400 w-md-auto custom-width"
+                className="reserve-btn"
+                size="sm"
+                style={{ width: '100px' }}
               >
-                {rocket.reserved ? 'Cancel Reservation' : 'Reserve Rocket'}
+                {rocket.reserved ? 'Cancel' : 'Reserve'}
               </Button>
             </div>
           </Card.Body>

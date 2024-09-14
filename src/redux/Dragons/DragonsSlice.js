@@ -1,29 +1,34 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
-import axios from 'axios';
+
+const baseUrl = 'https://api.spacexdata.com/v4/dragons';
+
+export const fetchDragons = createAsyncThunk('Dragons/fetchDragons', async () => {
+  const response = await fetch(baseUrl);
+  const data = await response.json();
+  return data.map((dragon) => ({
+    id: dragon.id,
+    name: dragon.name,
+    image: dragon.flickr_images[0],
+    description: dragon.description,
+    reserved: false,
+  }));
+});
 
 const initialState = {
   dragonData: [],
   loading: false,
-  error: null,
+  error: '',
 };
 
-export const fetchDragons = createAsyncThunk('dragons/fetchDragons', async () => {
-  const response = await axios.get('https://api.spacexdata.com/v4/dragons');
-  return response.data;
-});
-
-const dragonsSlice = createSlice({
-  name: 'dragons',
+const DragonsSlice = createSlice({
+  name: 'Dragons',
   initialState,
   reducers: {
     reserveDragon: (state, action) => {
-      const dragon = state.dragonData.find((dragon) => dragon.id === action.payload);
+      const dragon = state.dragonData.find((d) => d.id === action.payload);
       if (dragon) {
         dragon.reserved = !dragon.reserved;
       }
-    },
-    clearError: (state) => {
-      state.error = null;
     },
   },
   extraReducers: (builder) => {
@@ -42,5 +47,5 @@ const dragonsSlice = createSlice({
   },
 });
 
-export const { reserveDragon, clearError } = dragonsSlice.actions;
-export default dragonsSlice.reducer;
+export default DragonsSlice.reducer;
+export const { reserveDragon } = DragonsSlice.actions;
